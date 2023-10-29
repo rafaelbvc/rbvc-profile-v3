@@ -36,7 +36,7 @@ const HomeScreen: React.FC = () => {
                     </div>
                 </div>
             </section>
-            <MenuBottom className="z-10 top-[94%]" />
+            <MenuBottom className="z-10 top-[90%]" />
         </article>
     );
 };
