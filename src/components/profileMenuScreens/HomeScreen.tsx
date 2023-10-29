@@ -23,7 +23,7 @@ const HomeScreen: React.FC = () => {
             {!videoLoaded ? <PreloaderScreen /> : null}
             <PreloadableVideo videoPath={moviePath} onVideoLoaded={handleVideoLoad} />
             <NavBar classNameRBVCLogoBtn="text-lightGray" classNameGetStarted="text-lightGray" />
-            <section className="flex justify-center paddingYScreens z-[10] flex-col h-[80%] items-center">
+            <section className="flex justify-center paddingYScreens z-10 flex-col h-[80%] items-center">
                 <div className="flex flex-col p-2 sm:flex-row margins ">
                     <span className="p-3">
                         <p className="text-lg text-center whitespace-normal text-lightGray animate-pingText" style={{ lineHeight: "1.2" }}>
@@ -32,7 +32,7 @@ const HomeScreen: React.FC = () => {
                         </p>
                     </span>
                     <div className="p-3 animate-pingIMG">
-                        <UnderConstructionSVG width={"100%"} fillColor="#FCFCFF" />
+                        <UnderConstructionSVG width={""} fillColor="#FCFCFF" />
                     </div>
                 </div>
             </section>
