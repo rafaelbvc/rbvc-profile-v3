@@ -1,3 +1,18 @@
 [[redirects]]
-from = "/*"
-to = "https://rbvcprofile-v3.netlify.app/"
+
+from = "/aboutme*"
+to = "https://rbvcprofile-v3.netlify.app/aboutme"
+status = 200
+
+
+from = "/hire*"
+to = "https://rbvcprofile-v3.netlify.app/hire"
+status = 200
+
+from = "/contact*"
+to = "https://rbvcprofile-v3.netlify.app/contact"
+status = 200
+
+from = "/portifolio*"
+to = "https://rbvcprofile-v3.netlify.app/portifolio"
+status = 200
