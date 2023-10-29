@@ -1,0 +1,189 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes ping {
+
+  75%,
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.animate-pingText {
+  animation: ping 4s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.animate-pingIMG {
+  animation: ping 3s cubic-bezier(0, 0, 0.2, 1);
+}
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(-7%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+.animate-bounce {
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounceTitles {
+
+  0%,
+  50% {
+    transform: translateY(-70%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+
+  100% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+.bounceTitles {
+  animation: bounceTitles 900ms;
+}
+
+.bounceTitlesDelay {
+  animation: bounceTitles 1050ms;
+}
+
+.animate-ping {
+  animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes ping {
+
+  25%,
+  50% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+.animate-ping {
+  animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+.contactScreen {
+  @apply flex flex-row items-center justify-between sm:flex-col sm:gap-2 sm:p-1;
+}
+
+.svgContactScreen {
+  @apply flex w-[3rem] h-[3rem] items-center animate-pingIMG;
+}
+
+.margins {
+  @apply mx-1 sm:mx-2 md:mx-3 lg:mx-4 xl:mx-6 2xl:mx-8;
+}
+
+.paddingYScreens {
+  @apply py-1 sm:py-3 md:py-4 lg:py-5 xl:py-6 2xl:py-8;
+}
+
+.paddingTScreens {
+  @apply pt-1 sm:pt-3 md:pt-4 lg:pt-5 xl:pt-6 2xl:pt-8;
+}
+
+.paddingLScreens {
+  @apply lg:pl-2 xl:pl-6 2xl:pl-[10rem] 3xl:pl-[30rem];
+}
+
+.paddingRScreens {
+  @apply lg:pr-2 xl:pr-6 2xl:pr-[10rem] 3xl:pr-[30rem];
+}
+
+.vBtnStyle {
+  @apply text-sm underline cursor-pointer md:text-base text-mediumGray underline-offset-2 decoration-golden md:hover:text-golden md:hover:decoration-mediumGray;
+}
+
+.smallTitles {
+  @apply text-sms text-golden;
+}
+
+.menusStyle {
+  @apply mx-auto rounded-md shadow-sm;
+}
+
+.menuOpenStyle {
+  @apply z-20 content-center rounded-md shadow-sm bg-lightGray;
+}
+
+.pDescription {
+  @apply text-sm text-center whitespace-normal text-mediumGray animate-pingText;
+}
+
+.styleScreens {
+  @apply mx-auto min-w-[21rem] mt-[0.28rem] z-10;
+}
+
+.pMenus {
+  @apply border-b-[0.1rem] mb-1;
+}
+
+.vLabels {
+  @apply mx-1 mt-2 mb-[0.08rem] px-1 whitespace-nowrap text-xxs;
+}
+
+.vInputs {
+  @apply px-1 mx-1 rounded-sm border-border1 border-goldenAlpha;
+}
+
+.vSelect {
+  @apply px-1 mx-1 rounded-sm text-xms text-golden border-border1 border-goldenAlpha;
+}
+
+.vInputErrors {
+  @apply mx-auto whitespace-normal text-center text-sms text-red max-w-[24rem];
+}
+
+.gradientRadialLand {
+  background: radial-gradient(180vh circle at 50%, transparent, #000 60%);
+}
+
+.gradientRadialPort {
+  background: radial-gradient(230vw circle at 50% 50%, transparent, #000 40%);
+}
+
+.videoProps {
+  @apply top-[50%] translate-y-[-50%] absolute ml-[50%] translate-x-[-50%];
+}
+
+.divHireScreen {
+  @apply flex flex-col md:flex-row items-center justify-between gap-2 my-4
+}
+
+
+.liHireScreen {
+  @apply text-right text-lightBGray w-[20rem] whitespace-normal bounceTitles
+}
+
+.liHireScreenSoft {
+  @apply text-lightBGray py-1 whitespace-normal bounceTitles
+}
