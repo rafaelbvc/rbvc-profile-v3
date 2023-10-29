@@ -1,7 +1,4 @@
 [[redirects]]
-from = "/*"
-to = "https://rbvcprofile-v3.netlify.app/"
-status = 200
 
 from = "/aboutme*"
 to = "https://rbvcprofile-v3.netlify.app/aboutme"
