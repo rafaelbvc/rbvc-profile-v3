@@ -1,5 +1,5 @@
 [build]
-    command = "tsc && vite build"
+    command = "npm run build"
     publish = "/build"
     base = "/"
 
