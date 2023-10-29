@@ -1,11 +1,11 @@
 import { TSVGPropsType } from "../../types/svgPropsType";
 
-const UnderBConstructionSVG = ({widthSVG}: TSVGPropsType) => {
+const UnderBConstructionSVG = ({ width }: TSVGPropsType) => {
   return (
     <svg
       version="1.0"
       xmlns="http://www.w3.org/2000/svg"
-      width={widthSVG}
+      width={width}
       viewBox="0 0 1280.000000 905.000000"
       preserveAspectRatio="xMidYMid meet"
     >
