@@ -32,11 +32,11 @@ const HomeScreen: React.FC = () => {
                         </p>
                     </span>
                     <div className="p-3 animate-pingIMG">
-                        <UnderConstructionSVG width={""} fillColor="#FCFCFF" />
+                        <UnderConstructionSVG width={"90%"} fillColor="#FCFCFF" />
                     </div>
                 </div>
             </section>
-            <MenuBottom className="z-10 top-[90%]" />
+            <MenuBottom className="z-10 top-[94%]" />
         </article>
     );
 };
