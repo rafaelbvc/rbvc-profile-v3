@@ -19,7 +19,7 @@ const HomeScreen: React.FC = () => {
     };
 
     return (
-        <article id="HomeScreen" className="absolute w-[100%] h-[100vh] flex flex-col ">
+        <article id="HomeScreen" className="absolute w-[100%] h-[100%] flex flex-col ">
             {!videoLoaded ? <PreloaderScreen /> : null}
             <PreloadableVideo videoPath={moviePath} onVideoLoaded={handleVideoLoad} />
             <NavBar classNameRBVCLogoBtn="text-lightGray" classNameGetStarted="text-lightGray" />
@@ -36,7 +36,7 @@ const HomeScreen: React.FC = () => {
                     </div>
                 </div>
             </section>
-            <MenuBottom className="z-10 top-[94%]" />
+            <MenuBottom className="z-10 top-[86%]" />
         </article>
     );
 };
