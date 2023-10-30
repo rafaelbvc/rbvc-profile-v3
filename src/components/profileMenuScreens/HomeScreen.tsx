@@ -23,7 +23,7 @@ const HomeScreen: React.FC = () => {
             {!videoLoaded ? <PreloaderScreen /> : null}
             <PreloadableVideo videoPath={moviePath} onVideoLoaded={handleVideoLoad} />
             <NavBar classNameRBVCLogoBtn="text-lightGray" classNameGetStarted="text-lightGray" />
-            <section className="flex justify-center paddingYScreens z-10 flex-col h-[70%] items-center">
+            <section className="flex justify-center paddingYScreens z-10 flex-col h-[80%] items-center">
                 <div className="flex flex-col p-2 sm:flex-row margins ">
                     <span className="p-3">
                         <p className="text-lg text-center whitespace-normal text-lightGray animate-pingText" style={{ lineHeight: "1.2" }}>
@@ -36,7 +36,7 @@ const HomeScreen: React.FC = () => {
                     </div>
                 </div>
             </section>
-            <MenuBottom className="z-10 top-[94%]" />
+            <MenuBottom className="z-10 top-[86%]" />
         </article>
     );
 };
