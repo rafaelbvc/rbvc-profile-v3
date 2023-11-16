@@ -23,10 +23,10 @@ const HomeScreen: React.FC = () => {
             {!videoLoaded ? <PreloaderScreen /> : null}
             <PreloadableVideo videoPath={moviePath} onVideoLoaded={handleVideoLoad} />
             <NavBar classNameRBVCLogoBtn="text-lightGray" classNameGetStarted="text-lightGray" />
-            <section className="flex justify-center paddingYScreens flex-col h-[80%] items-center">
-                <section className="flex flex-col p-2 sm:flex-row margins ">
+            <section className="flex flex-col h-[80%] items-center justify-center paddingYScreens">
+                <section className="flex flex-col gap-2 sm:flex-wrap sm:flex-row margins ">
                     <div className="p-3 animate-pingText">
-                        <p className="text-lg text-center whitespace-normal text-lightGray " style={{ lineHeight: "1.2" }}>
+                        <p className="md:text-lg text-center whitespace-normal text-lightGray " style={{ lineHeight: "1.2" }}>
                             Hello, my name is Rafael, I am the developer of this page where you are welcome! Feel free to browse,<br /> my contact details are in the contact section.<br /><br />
                             Project intended as a portfolio and personal description in technical and personal skills.
                         </p>
