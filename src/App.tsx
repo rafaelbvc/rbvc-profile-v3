@@ -6,7 +6,7 @@ import { AuthProvider } from "./components/contexts/AuthContext";
 import OrientationProvider from "./components/contexts/OrientationContext";
 import { Suspense } from "react";
 import HireScreen from "./components/profileMenuScreens/HireScreen";
-import HomeScreen from "./components/profileMenuScreens/HomeScreen";
+// import HomeScreen from "./components/profileMenuScreens/HomeScreen";
 import PreloaderScreen from "./components/loadingSpinners/PreloaderScreen";
 import ContactScreen from "./components/profileMenuScreens/ContactScreen";
 import PortifolioScreen from "./components/profileMenuScreens/portifolio/PortifolioScreen";
@@ -26,20 +26,20 @@ function App() {
               element={
                 <Layout>
                   <Suspense fallback={<PreloaderScreen />}>
-                    <HomeScreen />
+                    <HireScreen />
                   </Suspense>
                 </Layout>
               }
             />
-            <Route path="*" errorElement={<ErrorPage />} element={<HomeScreen />} />
-            <Route
+            <Route path="*" errorElement={<ErrorPage />} element={<HireScreen />} />
+            {/* <Route
               path="/hire"
               element={
                 <Suspense fallback={<PreloaderScreen />}>
                   <HireScreen />
                 </Suspense>
               }
-            />
+            /> */}
             <Route
               path="/contact"
               element={
