@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import Layout from "./layouts/Layout";
+// import Layout from "./layouts/Layout";
 import { queryClient } from "./services/queryClient";
 import { QueryClientProvider } from "react-query";
 import { AuthProvider } from "./components/contexts/AuthContext";
@@ -11,7 +11,7 @@ import PreloaderScreen from "./components/loadingSpinners/PreloaderScreen";
 import ContactScreen from "./components/profileMenuScreens/ContactScreen";
 import PortifolioScreen from "./components/profileMenuScreens/portifolio/PortifolioScreen";
 import AboutMeContainer from "./components/profileMenuScreens/aboutMe/AboutMeContainer";
-// import ErrorPage from "./pages/ErrorPage";
+import ErrorPage from "./pages/ErrorPage";
 
 
 
@@ -24,14 +24,14 @@ function App() {
             <Route
               path="/"
               element={
-                <Layout>
-                  <Suspense fallback={<PreloaderScreen />}>
-                    <HomeScreen />
-                  </Suspense>
-                </Layout>
+                // <Layout>
+                <Suspense fallback={<PreloaderScreen />}>
+                  <HomeScreen />
+                </Suspense>
+                //  </Layout> 
               }
             />
-            {/* <Route path="*" errorElement={<ErrorPage />} element={<HomeScreen />} /> */}
+            <Route path="*" errorElement={<ErrorPage />} element={<HomeScreen />} />
             <Route
               path="/hire"
               element={
