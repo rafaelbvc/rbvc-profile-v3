@@ -93,58 +93,59 @@ function App() {
       <OrientationProvider>
         <QueryClientProvider client={queryClient}>
           <Routes>
-            <Route
-              path="/"
-              element={
-                <Suspense fallback={<PreloaderScreen />}>
-                  <Layout>
+            <Route path="/" element={<Layout />}>
+              <Route
+                index
+                element={
+                  <Suspense fallback={<PreloaderScreen />}>
                     <HomeScreen />
-                  </Layout>
-                </Suspense>
-              }
-            />
-            <Route path="*" errorElement={<ErrorPage />} element={<HomeScreen />} />
-            <Route
-              path="/hire"
-              element={
-                <Suspense fallback={<PreloaderScreen />}>
-                  <Layout>
+                  </Suspense>
+                }
+              />
+              <Route path="*" errorElement={<ErrorPage />} element={<HomeScreen />} />
+              <Route
+                path="/hire"
+                element={
+                  <Suspense fallback={<PreloaderScreen />}>
+
                     <HireScreen />
-                  </Layout>
-                </Suspense>
-              }
-            />
-            <Route
-              path="/contact"
-              element={
-                <Suspense fallback={<PreloaderScreen />}>
-                  <Layout>
+
+                  </Suspense>
+                }
+              />
+              <Route
+                path="/contact"
+                element={
+                  <Suspense fallback={<PreloaderScreen />}>
+
                     <ContactScreen />
-                  </Layout>
-                </Suspense>
-              }
-            />
-            <Route
-              path="/portifolio"
-              element={
-                <Suspense fallback={<PreloaderScreen />}>
-                  <Layout>
+
+                  </Suspense>
+                }
+              />
+              <Route
+                path="/portifolio"
+                element={
+                  <Suspense fallback={<PreloaderScreen />}>
+
                     <PortifolioScreen />
-                  </Layout>
-                </Suspense>
-              }
-            />
-            <Route
-              path="/aboutme"
-              element={
-                <Suspense fallback={<PreloaderScreen />}>
-                  <Layout>
+
+                  </Suspense>
+                }
+              />
+              <Route
+                path="/aboutme"
+                element={
+                  <Suspense fallback={<PreloaderScreen />}>
+
                     <AboutMeContainer animated={true} />
-                  </Layout>
-                </Suspense>
-              }
-            />
+
+                  </Suspense>
+                }
+              />
+            </Route >
           </Routes>
+
         </QueryClientProvider>
       </OrientationProvider>
     </AuthProvider>

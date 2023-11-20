@@ -20,22 +20,20 @@
 
 // export default Layout;
 
-import { ReactNode } from "react";
 import { Outlet } from "react-router-dom";
 
-type LayoutProps = {
-  children: ReactNode;
-};
+// type LayoutProps = {
+//   children: ReactNode;
+// };
 
 
 
-const Layout = ({ children }: LayoutProps) => {
+const Layout = () => {
 
   return (
-    <main className="absolute w-[100%] h-[100%] flex flex-col">
+    <main>
       <h1 className="hidden">Main Page</h1>
       <Outlet />
-      {children}
     </main>
   )
 };

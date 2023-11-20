@@ -24,7 +24,7 @@ const ContactScreen: React.FC = () => {
   };
 
   return (
-    <article id="ContactScreen" className="">
+    <article id="ContactScreen" className="absolute w-[100%] h-[100%] flex flex-col">
       {!videoLoaded ? <PreloaderScreen /> : null}
       <PreloadableVideo videoPath={moviePath} onVideoLoaded={handleVideoLoad} />
       <NavBar classNameGetStarted={`${orientation ? "text-mediumGray" : " "}`} classNameRBVCLogoBtn={`${orientation ? "text-mediumGray" : " "}`} />
