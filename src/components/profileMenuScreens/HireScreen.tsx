@@ -28,10 +28,10 @@ const HireScreen = () => {
   };
 
   return (
-    <article id="HireScreen" className="">
+    <article id="HireScreen" className="absolute w-[100%] h-[100%] flex flex-col">
       {!videoLoaded ? <PreloaderScreen /> : null}
       <PreloadableVideo videoPath={moviePath} onVideoLoaded={handleVideoLoad} />
-      <span className="absolute w-[100vw] h-[100vh] bg-blackAlpha" />
+      <span className="absolute  w-[100vw] h-[100vh] bg-blackAlpha" />
       <NavBar classNameRBVCLogoBtn="text-lightGray" classNameGetStarted="text-lightGray" />
       <section className="flex self-center justify-center paddingYScreens  z-10  flex-col h-[80%] items-center max-w-[96vw] xl:max-w-[80vw] 2xl:max-w-[66vw]">
         <div className="flex flex-col p-2 overflow-y-auto md:flex-row margins">
@@ -66,7 +66,8 @@ const HireScreen = () => {
                 <li className="liHireScreen">• Cryptography</li>
                 <li className="liHireScreen">• Security</li>
                 <li className="liHireScreen">• SOLID</li>
-              </ul>  </div>
+              </ul>
+            </div>
             <div className="divHireScreen">
               <TypeScriptLogo width="7rem" className="bounceTitlesDelay" />
               <ul>

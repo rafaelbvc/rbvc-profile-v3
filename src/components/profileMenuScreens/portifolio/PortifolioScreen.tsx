@@ -65,7 +65,7 @@ const PortifolioScreen = () => {
 
 
     return (
-        <article id="PortifolioScreen" className="">
+        <article id="PortifolioScreen" className="absolute w-[100%] h-[100%] flex flex-col">
             {!videoLoaded ? <PreloaderScreen /> : null}
             <PreloadableVideo videoPath={moviePath} onVideoLoaded={handleVideoLoad} />
             <NavBar />
