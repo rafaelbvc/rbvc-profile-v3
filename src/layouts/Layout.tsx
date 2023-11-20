@@ -32,7 +32,7 @@ type LayoutProps = {
 const Layout = ({ children }: LayoutProps) => {
 
   return (
-    <main >
+    <main className="absolute w-[100%] h-[100%] flex flex-col">
       <h1 className="hidden">Main Page</h1>
       <Outlet />
       {children}

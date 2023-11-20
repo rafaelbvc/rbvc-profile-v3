@@ -19,14 +19,14 @@ const HomeScreen: React.FC = () => {
     };
 
     return (
-        <article id="HomeScreen" className="absolute w-[100%] h-[100%] flex flex-col ">
+        <article id="HomeScreen" className="">
             {!videoLoaded ? <PreloaderScreen /> : null}
             <PreloadableVideo videoPath={moviePath} onVideoLoaded={handleVideoLoad} />
             <NavBar classNameRBVCLogoBtn="text-lightGray" classNameGetStarted="text-lightGray" />
             <section className="flex flex-col h-[80%] items-center justify-center paddingYScreens">
                 <section className="flex flex-col gap-2 sm:flex-wrap sm:flex-row margins ">
                     <div className="p-3 animate-pingText">
-                        <p className="md:text-lg text-center whitespace-normal text-lightGray " style={{ lineHeight: "1.2" }}>
+                        <p className="text-center whitespace-normal md:text-lg text-lightGray " style={{ lineHeight: "1.2" }}>
                             Hello, my name is Rafael, I am the developer of this page where you are welcome! Feel free to browse,<br /> my contact details are in the contact section.<br /><br />
                             Project intended as a portfolio and personal description in technical and personal skills.
                         </p>
