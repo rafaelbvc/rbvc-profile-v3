@@ -7,7 +7,7 @@ const FindYourMealScreen = () => {
   return (
     <section className="flex justify-center mx-auto paddingYScreens max-w-[80rem] flex-wrap lg:flex-nowrap" >
       <section className="flex flex-col items-center p-2 lg:w-1/2 margins">
-        <h4 className="mt-4 text-right text-bold bounceTitles">
+        <h4 className="mb-2 text-right text-bold bounceTitles">
           Find Your Meal
         </h4>
         <PortifolioPhotoContainer className="mb-[2rem] lg:mb-0 animate-pingIMG" alt="Find Your Meal - Rafael Vendramini" href="https://findyourmeal-rbvc.vercel.app/" src={findYourMeal} />

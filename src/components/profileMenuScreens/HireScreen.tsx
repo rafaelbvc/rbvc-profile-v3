@@ -28,7 +28,7 @@ const HireScreen = () => {
   };
 
   return (
-    <article id="HireScreen" className="absolute w-[100%] h-[100%] flex flex-col">
+    <article id="HireScreen" className="">
       {!videoLoaded ? <PreloaderScreen /> : null}
       <PreloadableVideo videoPath={moviePath} onVideoLoaded={handleVideoLoad} />
       <span className="absolute w-[100vw] h-[100vh] bg-blackAlpha" />
