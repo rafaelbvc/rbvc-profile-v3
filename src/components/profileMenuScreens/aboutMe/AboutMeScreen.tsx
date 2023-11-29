@@ -58,7 +58,7 @@ const AboutMeScreen: ForwardRefRenderFunction<HTMLDivElement, IAnimate> = (
                   <p className="my-5 font-bold bounceTitles ">Skills &</p>
                   <p className="my-5 font-bold text-golden bounceTitlesDelay">&nbsp; Tools</p>
                 </title>
-                <div className="flex flex-row flex-wrap justify-center gap-4">
+                <div className=" flex flex-row flex-wrap justify-center gap-4">
                   <JavaScriptLogo width={"5rem"} className={isAnimated ? " bounceTitlesDelay" : " "} />
                   <MongoDBLogo width={"5rem"} className={isAnimated ? " bounceTitlesDelay" : " "} />
                   <NextLogo width={"5rem"} className={isAnimated ? " bounceTitlesDelay" : " "} />

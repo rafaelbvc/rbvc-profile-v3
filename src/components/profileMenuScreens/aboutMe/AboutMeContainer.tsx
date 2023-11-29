@@ -25,6 +25,7 @@ const AboutMeContainer = ({ animated }: IAnimate) => {
     <section id="AboutMe" className="absolute w-[100%] h-[100%]">
       {!videoLoaded ? <PreloaderScreen /> : null}
       <PreloadableVideo videoPath={moviePath} onVideoLoaded={handleVideoLoad} />
+      <span className="absolute  w-[100vw] h-[100vh] bg-lightGrayMoreAlpha" />
       <NavBar />
       <AboutMePdf />
       <AboutMeScreen animated={animated} />
