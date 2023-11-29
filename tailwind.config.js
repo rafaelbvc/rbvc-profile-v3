@@ -24,6 +24,7 @@ export default {
       blackMoreAlpha: "rgb(0,0,0, 0.1)",
       white: "#FFFFFF",
       lightGrayAlpha: "RGB(252,252,255, 0.4)",
+      lightGrayMoreAlpha: "RGB(252,252,255, 0.25)",
       lightBGray: "#D9E2E5",
       golden: "#CAAA6C",
       goldenAlpha: "rgb(202,170,108, 0.4)",

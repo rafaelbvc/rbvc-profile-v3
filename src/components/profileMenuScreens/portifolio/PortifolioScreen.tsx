@@ -69,17 +69,18 @@ const PortifolioScreen = () => {
             {!videoLoaded ? <PreloaderScreen /> : null}
             <PreloadableVideo videoPath={moviePath} onVideoLoaded={handleVideoLoad} />
             <NavBar />
-            <menu className="flex justify-center mx-auto paddingTScreens max-w-[80rem] ">
+            <menu className="flex justify-center max-h-[80rem] mx-auto paddingTScreens max-w-[80rem] ">
                 <button onClick={prevSlide}>
                     <ArrowRight width="14" className="cursor-pointer" />
                 </button>
-                <menu className='flex justify-center py-2 mx-10 top-4'>
+                <menu className='flex justify-center py-2 mx-10'>
                     {projectComponent.map((slide, slideIndex) => (
                         <div
                             key={slideIndex}
                             onClick={() => goToSlide(slideIndex)}
                             className="text-2xl cursor-pointer text-mediumGray"
                         >
+
                             <RxDotFilled />
                         </div>
                     ))}
@@ -88,7 +89,7 @@ const PortifolioScreen = () => {
                     <ArrowLeft width="14" className="cursor-pointer" />
                 </button>
             </menu>
-            <div className="overflow-auto h-[80vh] flex justify-center items-center">
+            <div className="overflow-auto  h-[80vh] flex justify-center items-center">
                 <section className="flex justify-center mx-auto paddingYScreens max-w-[80rem] flex-wrap lg:flex-nowrap " >
                     {projectComponent[currentIndex].component}
                 </section >

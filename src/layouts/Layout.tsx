@@ -22,10 +22,6 @@
 
 import { Outlet } from "react-router-dom";
 
-// type LayoutProps = {
-//   children: ReactNode;
-// };
-
 
 
 const Layout = () => {

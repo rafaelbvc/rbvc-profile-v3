@@ -12,7 +12,7 @@ const FindYourMealScreen = () => {
         </h4>
         <PortifolioPhotoContainer className="mb-[2rem] lg:mb-0 animate-pingIMG" alt="Find Your Meal - Rafael Vendramini" href="https://findyourmeal-rbvc.vercel.app/" src={findYourMeal} />
       </section>
-      <section className="flex flex-col p-2 items-left margins animate-pingText">
+      <section className="flex flex-col p-2 items-left margins animate-pingText ">
         <p className="text-center whitespace-normal text-bold">
           Important: Exclusively this project, for desktops only or landscape orientation!
         </p>
